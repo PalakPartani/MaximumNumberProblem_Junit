@@ -11,4 +11,16 @@ public class MaximumNumber {
         }
         return maxNumber;
     }
+
+    public Float findMaximumNumber(Float num1, Float num2, Float num3) {
+        Float maxNumber = num1;
+        if (maxNumber.compareTo(num2) < 0) {
+            maxNumber = num2;
+        }
+        if (maxNumber.compareTo(num3) < 0) {
+            maxNumber = num3;
+        }
+        return maxNumber;
+    }
 }
+
