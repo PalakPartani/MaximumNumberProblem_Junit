@@ -22,5 +22,16 @@ public class MaximumNumber {
         }
         return maxNumber;
     }
+    public String findMaximumString(String firstString, String secondString, String thirdString) {
+        String maximumValue = firstString;
+        if (secondString.compareTo(maximumValue)>0) {
+            maximumValue = secondString;
+        }
+        if(thirdString.compareTo(maximumValue)>0) {
+            maximumValue=thirdString;
+        }
+        return maximumValue;
+    }
+
 }
 

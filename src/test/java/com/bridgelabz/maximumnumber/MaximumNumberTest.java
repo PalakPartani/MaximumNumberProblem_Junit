@@ -30,20 +30,39 @@ public class MaximumNumberTest {
 
     //uc2
     @Test
-    public void givenMaximumFloatNumber_whenAtFirstPosition_shouldReturnSameNumber() {
+    public void givenMaximumFloatNumber_AtFirstPosition_ShouldReturnSameNumber() {
         Float result = maximumNumber.findMaximumNumber(60.2f, 20.2f, 40.2f);
         Assert.assertEquals(Float.valueOf(60.2f), result);
     }
 
     @Test
-    public void givenMaximumFloatNumber_whenAtSecondNumber_shouldReturnSameNumber() {
+    public void givenMaximumFloatNumber_AtSecondNumber_ShouldReturnSameNumber() {
         Float result = maximumNumber.findMaximumNumber(20.f, 60.2f, 40.2f);
         Assert.assertEquals(Float.valueOf(60.2f), result);
     }
 
     @Test
-    public void givenMaximumNumber_whenAtThirdNumber_shouldReturnSameNumber() {
+    public void givenMaximumNumber_AtThirdNumber_ShouldReturnSameNumber() {
         Float result = maximumNumber.findMaximumNumber(40.2f, 20.2f, 60.2f);
         Assert.assertEquals(Float.valueOf(60.2f), result);
     }
+
+    @Test
+    public void givenStringValue_whenAtFirstPosition_ShouldReturnMaxString() {
+        String result = maximumNumber.findMaximumString("Plk", "Aaa", "Ccc");
+        Assert.assertEquals("Plk", result);
+    }
+
+    @Test
+    public void giveStringValue_whenAtSecondPosition_ShouldReturnMaxString() {
+        String result = maximumNumber.findMaximumString("Aaa", "Plk", "Ccc");
+        Assert.assertEquals("Plk", result);
+    }
+
+    @Test
+    public void givenStringValue_whenAtThirdPosition_ShouldReturnMaxString() {
+        String result = maximumNumber.findMaximumString("Aaa", "Cdd", "plk");
+        Assert.assertEquals("plk", result);
+    }
+
 }
