@@ -23,13 +23,13 @@ public class MaximumNumber<E extends Comparable<E>> {
         if (maxValue.compareTo(thirdValue) < 0) {
             maxValue = thirdValue;
         }
-        //  printMax(maxValue);
+          printMax(maxValue);
         return maxValue;
     }
 
-   /* public static <E extends Comparable<E>> void printMax(E maxValue) {
+    public static <E extends Comparable<E>> void printMax(E maxValue) {
         System.out.println("Maximum value: " + maxValue);
-    }*/
+    }
 }
  /*   public <E extends Comparable<E>> E findMaximum(E firstValue, E secondValue, E thirdValue) {
         E maxNumber = firstValue;
